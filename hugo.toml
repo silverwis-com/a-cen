@@ -96,6 +96,8 @@ buildExpired = false
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+    [markup.goldmark.extensions]
+      autoHeadingID = false  # 자동 헤딩 ID 생성 비활성화
   [markup.highlight]
     noClasses = false
     codeFences = true
