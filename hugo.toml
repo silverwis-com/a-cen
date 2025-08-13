@@ -87,6 +87,10 @@ buildExpired = false
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
+# RSS 설정
+[services.rss]
+  limit = 10
+
 # 마크업 설정
 [markup]
   [markup.goldmark]
