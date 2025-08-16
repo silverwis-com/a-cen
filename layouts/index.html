@@ -1,5 +1,4 @@
 {{- define "main" }}
-
 <article class="first-entry home-info">
     <header class="entry-header">
         <h1>{{ site.Params.title | default site.Title }}</h1>
@@ -8,10 +7,8 @@
         <p>{{ site.Params.description }}</p>
     </div>
 </article>
-
 {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{- $featuredPages := where $pages "Params.featured" "eq" true }}
-
 {{- if $featuredPages }}
 <header class="page-header">
     <h2>추천 게시글</h2>
@@ -44,5 +41,4 @@
     <p>직접 URL로 게시글에 접근해주세요.</p>
 </div>
 {{- end }}
-
 {{- end }}{{/* end main */}}
